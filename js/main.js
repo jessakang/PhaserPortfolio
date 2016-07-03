@@ -29,37 +29,39 @@ var mainState = {
       })
     );
 
-    this.enemy = game.add.sprite(350, 80,
-      box ({
-        length: 32,
-        width: 32,
-        color: '#eb6111'
-      })
-    );
+    this.enemy = [
 
-    this.enemy = game.add.sprite(250, 250,
+      game.add.sprite(350, 80,
       box ({
         length: 32,
         width: 32,
         color: '#eb6111'
       })
-    );
+    ),
 
-    this.enemy = game.add.sprite(180, 500,
+    game.add.sprite(250, 250,
       box ({
         length: 32,
         width: 32,
         color: '#eb6111'
       })
-    );
+    ),
 
-    this.enemy = game.add.sprite(400, 530,
+    game.add.sprite(180, 500,
       box ({
         length: 32,
         width: 32,
         color: '#eb6111'
       })
-    );
+    ),
+
+    game.add.sprite(400, 530,
+      box ({
+        length: 32,
+        width: 32,
+        color: '#eb6111'
+      })
+    )];
 
     this.walls = game.add.group();
     this.walls.enableBody = true;
