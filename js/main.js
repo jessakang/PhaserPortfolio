@@ -17,6 +17,7 @@ var box = function (options) {
 
 var mainState = {
   create: function () {
+    game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     game.stage.backgroundColor = "#1D873F";
     game.physics.startSystem(Phaser.Physics.ARCADE);
     game.world.enableBody = true;
