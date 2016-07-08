@@ -9,12 +9,6 @@ var box = function (options) {
     return bmd;
 };
 
-// shape = box({
-//   length: 32,
-//   width: 32,
-//   color: '#E729A5'
-// });
-
 var mainState = {
   create: function () {
     game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
